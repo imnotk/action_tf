@@ -59,6 +59,6 @@ python ./script/confusion_matrix_ts_resnet50.py
 由于tensorflow1.x没有自带的ImageNet预训练权重，我们需要从Tensorflow Models里面下载slim的模型，再转换成dm-sonnet的模型，需要你先从[slim](https://github.com/tensorflow/models/tree/master/research/slim)中下载ResNet50等模型权重(不要下载成TF2的)，然后使用utils目录下的rebuild_ckpt.py文件转换模型。
 注意：我没有提供argparser等命令行指令，需要你手动修改你的模型权重路径。
 ```
-python rebuild_ckpt.py --rgb 1 --flow 1.5 --fusion 2 -s 1
+python rebuild_ckpt.py
 ```
 对于数据集同理，由于没有提供整体的config文件，你需要在Dataset里面调整各个文件的路径，这只是个Draft文件。
