@@ -1,0 +1,3 @@
+python3.5 train_2d.py -eval_type flow -batch_size 128 -learning_rate 1e-2 -split 0 -lr_step [250,350] -epoch 400 -reboot -rgb_dr 1.0 -flow_dr 0.2 -model_type resnet50 -gpu_nums 2
+python3.5 train_2d.py -eval_type flow -batch_size 128 -learning_rate 5e-3 -split 1 -lr_step [200,300] -epoch 350 -reboot -rgb_dr 1.0 -flow_dr 0.2 -model_type resnet50 -gpu_nums 2
+# python3.5 train_2d.py -eval_type flow -batch_size 16 -learning_rate 5e-3 -split 2 -lr_step [200,300] -epoch 350 -reboot -rgb_dr 1.0 -flow_dr 0.2 -model_type resnet50 -gpu_nums 2

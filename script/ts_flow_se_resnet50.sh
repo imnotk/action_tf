@@ -1,0 +1,1 @@
+python3.5 train_ts_resnet.py -eval_type flow  -batch_size 32 -learning_rate 2e-3 -split 0 -lr_step [80,160] -epoch 200 -reboot -rgb_dr 0.5 -flow_dr 0.2 -model_type se_resnet50 -gpu_nums 2   

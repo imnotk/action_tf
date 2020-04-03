@@ -1,0 +1,1 @@
+python3.5 train_ts_resnet.py -batch_size 32 -eval_type rgb -model_type inception_v3 -learning_rate 1e-3 -lr_step [30,60] -epoch 80 -flow_dr 0.5 -frame_counts 3
